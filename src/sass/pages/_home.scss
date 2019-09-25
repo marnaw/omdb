@@ -1,0 +1,35 @@
+.container {
+    max-width: 160rem;
+    margin: 4rem auto 0;
+    overflow: hidden;
+
+    @include respond(phone) {
+
+        margin: 0;
+    }
+
+
+}
+
+
+.wrapper {
+    display: flex;
+    min-height: calc(90vh - 13rem);
+
+    @include respond (phone) {
+
+        flex-direction: column;
+
+
+    }
+
+}
+
+
+
+.movie-view {
+    display: flex;
+    flex-basis: 100%;
+    background-color: var(--color-grey-dark-2);
+    padding: 4rem;
+}

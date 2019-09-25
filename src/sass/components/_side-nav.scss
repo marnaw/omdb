@@ -1,0 +1,31 @@
+.side-nav {
+    display: flex;
+    margin-top: 2rem;
+    height: 100%;
+    list-style: none;
+
+    @include respond(phone) {
+        margin-top: 0rem;
+        margin-left: 2rem;
+        height: 3rem;
+    }
+
+
+    &__item {
+
+        transition: .3s;
+
+        &:hover .side-nav__icon {
+            fill: var(--color-blue-light-1);
+            transform: scale(1.2)
+        }
+    }
+
+    &__icon {
+        height: 3rem;
+        width: 3rem;
+        fill: var(--color-white);
+
+
+    }
+}

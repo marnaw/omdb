@@ -1,0 +1,42 @@
+:root {
+    --color-primary: #000;
+    --color-white: #fff;
+    --color-red: red;
+    --color-grey-light-1: #c6c2c2;
+
+    --color-grey-dark-1: #545454;
+    --color-grey-dark-2: #161616;
+    --color-grey-dark-3: #2D2D2D;
+    --color-grey-dark-4: #141414;
+
+    --color-blue-light-1: #2196F3;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+a {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+}
+
+body {
+    background-color: #6b6b6b;
+}

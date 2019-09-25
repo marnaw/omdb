@@ -1,0 +1,16 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 10rem;
+    background-color: var(--color-primary);
+    align-items: center;
+
+    @include respond(phone) {
+        flex-direction: row;
+
+        height: 5rem;
+        width: 100%;
+    }
+
+}

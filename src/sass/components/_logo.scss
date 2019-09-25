@@ -1,0 +1,22 @@
+.logo {
+    margin-left: 10rem;
+    width: 5rem;
+    height: 5rem;
+    fill: var(--color-white);
+    cursor: pointer;
+    transition: .2s;
+
+    @include respond(phone) {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 2.3rem;
+        height: 2.3rem;
+        margin-left: 0;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        fill: var(--color-red);
+    }
+}

@@ -1,0 +1,27 @@
+.likes {
+    margin-right: 5rem;
+
+    @include respond(phone) {
+        margin-right: 1rem;
+
+    }
+
+    &__icon {
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        fill: var(--color-white);
+        cursor: pointer;
+        transition: .2s ease-out;
+
+        &--active {
+            fill: var(--color-red);
+
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}
