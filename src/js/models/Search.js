@@ -8,7 +8,7 @@ export default class Search {
     }
     async getSearch() {
         try {
-            const res = await axios(`http://www.omdbapi.com/?s=${this.query}&apikey=${key}`);
+            const res = await axios(`https://www.omdbapi.com/?s=${this.query}&apikey=${key}`);
             this.result = res.data.Search;
             console.log(this.result)
         } catch (error) {

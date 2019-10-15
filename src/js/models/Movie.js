@@ -10,7 +10,7 @@ export default class Movie {
 
     async getMovie() {
         try {
-            const res = await axios(`http://www.omdbapi.com/?i=${this.id}&apikey=${key}`);
+            const res = await axios(`https://www.omdbapi.com/?i=${this.id}&apikey=${key}`);
             this.res = res.data;
         } catch (error) {
             alert('Something went wrong!')
