@@ -109,7 +109,7 @@ const controlLike = (element, movie = '', e) => {
     state.like.addLike(item);
     if (state.like.like.length > 0) {
       elements.moviesLikeIcon.classList.add("likes__icon--active");
-      elements.moviesLikeIcon.addEventListener("click", () => elements.movieLikes.classList.toggle("likes-movie likes-movie--active")) //toogle for list Likes
+      elements.moviesLikeIcon.addEventListener("click", () => elements.movieLikes.classList.toggle("likes-movie--active")) //toogle for list Likes
 
     }
 
