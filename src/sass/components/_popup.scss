@@ -13,6 +13,8 @@
     animation: popUp 1s both;
 
     @include respond(phone) {
+        position: fixed;
+
         overflow-y: scroll;
         max-height: 100%;
     }
