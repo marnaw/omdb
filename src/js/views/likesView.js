@@ -1,7 +1,5 @@
 import {
     elements,
-    elementStrings
-
 } from './base';
 
 
@@ -44,7 +42,6 @@ const renderLikes = (movie) => {
     })
 
 }
-
 export const showLike = (movie, e) => { // show like heart and  like movies
     renderLikes(movie)
 }

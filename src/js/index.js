@@ -52,9 +52,9 @@ const controlSearch = async e => {
       state.searchView.renderResults(state.search.result, state.like.like);
 
       // show more information about movie (click)
-      document.querySelectorAll(elementStrings.cardShow).forEach(button => button.addEventListener("click", controlMovie));
+      document.querySelectorAll('.' + elementStrings.cardShow).forEach(button => button.addEventListener("click", controlMovie));
       // add like to like list (click)
-      document.querySelectorAll(elementStrings.cardAdd).forEach(button => button.addEventListener("click", controlLike.bind(this, elementStrings.cardAdd, '')));
+      document.querySelectorAll('.' + elementStrings.cardAdd).forEach(button => button.addEventListener("click", controlLike.bind(this, '.' + elementStrings.cardAdd, '')));
     } catch (err) {
       alert(err);
     }
@@ -71,7 +71,6 @@ const controlMovie = async e => {
   e.preventDefault();
   let id = e.target.dataset.id;
   state.movie = new Movie(id);
-  console.log(state.movie);
   try {
     // Get movie data
     await state.movie.getMovie();
@@ -80,7 +79,7 @@ const controlMovie = async e => {
     MovieView.renderMovie(state.movie.res, state.like.like);
 
     document.querySelector('.popup__list-like').addEventListener('click', controlLike.bind(this, '.popup__list-like', state.movie.res)) //add or delete like movie
-    document.querySelector(elementStrings.closePop).addEventListener("click", MovieView.hiddenPopUp); //delete popup with movie
+    document.querySelector('.' + elementStrings.closePop).addEventListener("click", MovieView.hiddenPopUp); //delete popup with movie
 
   } catch (err) {
     alert(err);

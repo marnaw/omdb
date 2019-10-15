@@ -10,7 +10,6 @@ export default class Search {
         try {
             const res = await axios(`https://www.omdbapi.com/?s=${this.query}&apikey=${key}`);
             this.result = res.data.Search;
-            console.log(this.result)
         } catch (error) {
             alert("Something went wrong")
         }

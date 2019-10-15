@@ -9,10 +9,10 @@ export const elements = {
 
 };
 export const elementStrings = {
-    cardShow: '.card__show',
-    closePop: '.popup__close',
-    popUp: '.popup',
-    cardAdd: '.card__add-like',
+    cardShow: 'card__show',
+    closePop: 'popup__close',
+    popUp: 'popup',
+    cardAdd: 'card__add-like',
     likesTitle: 'likes-movie__title'
 
 }

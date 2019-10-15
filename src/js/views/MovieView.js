@@ -45,10 +45,7 @@ export const renderMovie = (movie, likes) => {
     elements.movieView.insertAdjacentHTML('beforebegin', markup);
 }
 export const hiddenPopUp = () => {
-    const popUp = document.querySelector(elementStrings.popUp);
+    const popUp = document.querySelector('.' + elementStrings.popUp);
     setTimeout(() => popUp.remove(), 1200)
     popUp.classList.add('popup__remove');
 }
-
-
-/* <li class="popup__list-item"><strong>IMDB Rating:</strong> ${movie.Ratings.length> 0 ? movie.Ratings[0].Value : ''} </li> */

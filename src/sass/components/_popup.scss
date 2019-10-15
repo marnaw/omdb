@@ -9,12 +9,12 @@
     width: 100vw;
     height: 100%;
 
-    background: rgba(0, 0, 0, 0.8);
+    background-color: var(--color-grey-dark-4);
     animation: popUp 1s both;
 
     @include respond(phone) {
-        position: absolute;
-        height: 80rem;
+        overflow-y: scroll;
+        max-height: 100%;
     }
 
 
@@ -183,6 +183,7 @@
         list-style: none;
         margin-top: 2rem;
         margin-left: 1rem;
+
 
         @include respond(tab-land) {
             margin-top: .8rem;
